@@ -70,13 +70,6 @@ header {
   justify-content: flex-end;
 }
 
-.underline {
-  height: 2px;
-  width: inherit;
-  background-color: black;
-  margin: 2% 0 3% 0;
-}
-
 /* side border animation */
 .aside-container {
   width: 18%;
@@ -89,31 +82,39 @@ header {
 aside {
   width: 8%;
   border-right: solid 4px #111112;
-  animation: falldown 1s ease-out;
+  animation: falldown 1s ease-in-out forwards;
 }
 
 @keyframes falldown {
-  0% {height: 0px; opacity: 0;}
-  40% {opacity: 1;}
-  100% {height: 243px;}
+  0% {transform: translateY(-300px); opacity: 0;}
+  60% {opacity: 1;}
+  100% {transform: translateY(0px);}
 }
+
 /* underline animation */
+.underline {
+  height: 2px;
+  width: inherit;
+  background-color: black;
+  margin: 2% 0 3% 0;
+}
 
 /* header animation */
 .header-container {
   height: inherit;
-  animation: popUp 300ms ease-in-out;
+  opacity: 0;
+  animation: popUp 500ms ease-out 750ms forwards;
 }
 
 @keyframes popUp {
     0% {
       opacity: 0;
-      top: -900px;
+      transform: translateY(5.5rem);
     }
 
     100% {
       opacity: 1;
-      top: 0px;
+      transform: translateY(0px);
     }
 }
 /* li animation */
