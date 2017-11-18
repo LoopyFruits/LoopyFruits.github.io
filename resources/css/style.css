@@ -1,11 +1,11 @@
 /* Universal */
-
 html {
   font-size: 18px;
 }
 
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
+  color: #111112;
   font-size: 4rem;
   text-transform: uppercase;
   margin-bottom: 1%;
@@ -16,6 +16,7 @@ h4 {
 }
 
 li {
+  color: #111112;
   font-family: 'Lora', serif;
   list-style: none;
   margin: 2% 0;
@@ -32,16 +33,22 @@ a{
 /* containers */
 body {
   height: 4000px;
-  background-color: lightgray;
+  background-color: #cbcace;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
 }
 
+header {
+  overflow: hidden;
+  height: 5.45rem;
+}
+
 .site-container {
-  background-color: white;
+  background-color: #f7f7f8;
   height: 100%;
   width: 1000px;
+  border
 }
 
 .container-all {
@@ -57,15 +64,43 @@ body {
   justify-content: flex-end;
 }
 
-aside {
-  width: 8%;
-  border-right: solid 4px black;
-  margin-right: 1%
-}
-
-div {
+.underline {
   height: 2px;
   width: inherit;
   background-color: black;
   margin: 2% 0 3% 0;
 }
+
+/* side border animation */
+aside {
+  width: 8%;
+  border-right: solid 4px #111112;
+  margin-right: 1%;
+  animation: falldown 1s ease-out infinite;
+}
+
+@keyframes falldown {
+  0% {height: 0px; opacity: 0;}
+  40% {opacity: 1;}
+  100% {height: 243px;}
+}
+/* underline animation */
+
+/* header animation */
+.header-container {
+  height: inherit;
+  animation: popUp 300ms ease-in-out;
+}
+
+@keyframes popUp {
+    0% {
+      opacity: 0;
+      top: -900px;
+    }
+
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
+}
+/* li animation */
