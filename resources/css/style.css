@@ -1,24 +1,26 @@
 /* Universal */
-* {
-  border: solid 1px rgba(0, 0, 0, 0.5);
-}
 
 html {
   font-size: 18px;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 3rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 4rem;
   text-transform: uppercase;
+  margin-bottom: 1%;
 }
 
 h4 {
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 li {
+  font-family: 'Lora', serif;
   list-style: none;
+  margin: 2% 0;
+  line-height: 1.5;
+  margin-left: 2%;
 }
 
 a{
@@ -29,10 +31,41 @@ a{
 
 /* containers */
 body {
+  height: 4000px;
+  background-color: lightgray;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .site-container {
-  width: 15.55rem;
+  background-color: white;
+  height: 100%;
+  width: 1000px;
+}
+
+.container-all {
+  width: inherit;
+  display: inline-flex;
+  margin-top: 10%;
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+aside {
+  width: 8%;
+  border-right: solid 4px black;
+  margin-right: 1%
+}
+
+div {
+  height: 2px;
+  width: inherit;
+  background-color: black;
+  margin: 2% 0 3% 0;
 }
