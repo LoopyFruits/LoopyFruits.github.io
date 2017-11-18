@@ -13,6 +13,7 @@ h1 {
 
 h4 {
   font-family: 'Montserrat', sans-serif;
+  margin-left: 0.3rem;
 }
 
 li {
@@ -70,6 +71,7 @@ header {
   justify-content: flex-end;
 }
 
+
 /* side border animation */
 .aside-container {
   width: 18%;
@@ -104,7 +106,7 @@ aside {
 .underline-container {
   height: 2px;
   width: 21rem;
-  margin: 2% 0 3% 0;
+  margin: 2% 0 3% 0.4rem;
   overflow-x: hidden;
 }
 
