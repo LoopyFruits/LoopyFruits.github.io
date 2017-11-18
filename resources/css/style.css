@@ -1,4 +1,7 @@
 /* Universal */
+* {
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
 
 html {
   font-size: 18px;
@@ -6,6 +9,8 @@ html {
 
 h1 {
   font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -14,4 +19,20 @@ h4 {
 
 li {
   list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* containers */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.site-container {
+  width: 15.55rem;
 }
