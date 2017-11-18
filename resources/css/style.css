@@ -38,7 +38,7 @@ a:hover{
 
 /* containers */
 body {
-  height: 4000px;
+  height: 100vh;
   background-color: #edecee;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ header {
 
 .site-container {
   background-color: #f7f7f8;
-  height: 100%;
+  height: 100vh;
   width: 1000px;
   border-left: solid 1px #cecdd0;
   border-right: solid 1px #cecdd0;
@@ -160,12 +160,12 @@ aside {
 
 .l2 {
   transform: translateX(-20rem);
-  animation: fadein 1s ease-in-out 1.65s forwards;
+  animation: fadein 850ms ease-in-out 1.55s forwards;
 }
 
 .l3 {
   transform: translateX(-20rem);
-  animation: fadein 1s ease-in-out 2.05s forwards;
+  animation: fadein 700ms ease-in-out 1.85s forwards;
 }
 
 @keyframes fadein {
