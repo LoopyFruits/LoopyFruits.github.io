@@ -16,7 +16,7 @@ h4 {
 }
 
 li {
-  color: #111112;
+  color: #6b6972;
   font-family: 'Lora', serif;
   font-size: 1.2rem;
   list-style: none;
@@ -28,7 +28,7 @@ li {
 /* TODO make darker */
 a{
   text-decoration: none;
-  color: darkgray;
+  color: #6b6972;
 }
 
 a:hover{
@@ -38,7 +38,7 @@ a:hover{
 /* containers */
 body {
   height: 4000px;
-  background-color: #cbcace;
+  background-color: #edecee;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
@@ -53,8 +53,8 @@ header {
   background-color: #f7f7f8;
   height: 100%;
   width: 1000px;
-  border-left: solid 1px rgba(0, 0, 0, 0.4);
-  border-right: solid 1px rgba(0, 0, 0, 0.4);
+  border-left: solid 1px #cecdd0;
+  border-right: solid 1px #cecdd0;
 }
 
 .container-all {
@@ -73,6 +73,7 @@ header {
 /* side border animation */
 .aside-container {
   width: 18%;
+  height: 14rem;
   margin-right: 1%;
   display: flex;
   justify-content: flex-end;
@@ -86,10 +87,18 @@ aside {
 }
 
 @keyframes falldown {
-  0% {transform: translateY(-300px); opacity: 0;}
-  60% {opacity: 1;}
-  75% {transform: translateY(0px);}
+  0% {
+    transform: translateY(-300px);
+     opacity: 0;
+   }
+  60% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0px);
+  }
 }
+
 
 /* underline animation */
 .underline-container {
@@ -116,6 +125,8 @@ aside {
     transform: translateX(0rem);
   }
 }
+
+
 /* header animation */
 .header-container {
   height: inherit;
@@ -128,11 +139,45 @@ aside {
       opacity: 0;
       transform: translateY(5.5rem);
     }
-
     100% {
       opacity: 1;
       transform: translateY(0px);
     }
 }
 
+
 /* li animation */
+.list-container {
+  overflow-x: hidden;
+}
+
+.l1 {
+  transform: translateX(-20rem);
+  animation: fadein 1s ease-in-out 1.25s forwards;
+}
+
+.l2 {
+  transform: translateX(-20rem);
+  animation: fadein 1s ease-in-out 1.65s forwards;
+}
+
+.l3 {
+  transform: translateX(-20rem);
+  animation: fadein 1s ease-in-out 2.05s forwards;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateX(-6rem);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0.15rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
