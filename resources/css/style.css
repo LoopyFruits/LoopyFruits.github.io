@@ -88,17 +88,34 @@ aside {
 @keyframes falldown {
   0% {transform: translateY(-300px); opacity: 0;}
   60% {opacity: 1;}
-  100% {transform: translateY(0px);}
+  75% {transform: translateY(0px);}
 }
 
 /* underline animation */
-.underline {
+.underline-container {
   height: 2px;
-  width: inherit;
-  background-color: black;
+  width: 21rem;
   margin: 2% 0 3% 0;
+  overflow-x: hidden;
 }
 
+.underline {
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  opacity: 0.4;
+  transform: translateX(-22rem);
+  animation: slideIn 300ms linear 450ms forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-22rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
 /* header animation */
 .header-container {
   height: inherit;
@@ -117,4 +134,5 @@ aside {
       transform: translateY(0px);
     }
 }
+
 /* li animation */
